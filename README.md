@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Shopping Card
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Shopping card with few items on the store.
 
-## Available Scripts
+## Store
 
-In the project directory, you can run:
+The store display items(image, name, price, add button). The add button adds item on the card, one click will place the the current item to card(which is display on the add button), and from once click every other click item will add the item on the card.
 
-### `npm start`
+## Card
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The card only displays the item which are the added on the card. Card has more feature than the store:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Updating Item Count
 
-### `npm test`
+Each and every item on the card can be increase and decrease.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+##### Increase Item Count
 
-### `npm run build`
+Plus button will increase item count on the card 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### Decrease Item Count
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Plus button will decrease item count on the card. When the item count is zero it will be automatically remove from the card.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The card has other button:
 
-### `npm run eject`
+* Continue Shopping button will take you to the store
+* Checkout button is not active yet
+* Clear button will remove all the item on the card
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The Subtotal will give track of all the items on the card and calculate their price
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Preview:
 
-## Learn More
+Desktop
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img src="./src/assets/showcase/desktop-store.png" />
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<img src="./src/assets/showcase/desktop-card.png" />
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+It is responsive
