@@ -25,6 +25,7 @@ const Cart = () => {
 							if (cartItems[product.id] !== 0) {
 								return <CartItem key={product.id} data={product} />
 							}
+							return null
 						})
 					) : (
 						<p>Cart is Empty</p>
