@@ -1,5 +1,22 @@
+:root {
+  --color-primary: rgb(2, 38, 71);
+  --color-secondary: rgb(22, 46, 66);
+  --color-white: #fff;
+}
+
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+.main {
+  min-height: calc(100vh - 4.4rem + 1rem)
 }

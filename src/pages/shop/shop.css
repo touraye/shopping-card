@@ -1,13 +1,48 @@
 .shop-container {
-  max-width: 760px;
-  margin: 2rem auto;
-  outline: 1px solid;
+  max-width: 1090px;
+  margin: 0 auto;  
   text-align: center;
+  padding: 5rem 0;
 }
 
+
 .shop-content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding-top: 3rem;
+  place-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .shop-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shop-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .8rem;
+  }
+}
+
+@media screen and (max-width: 737px) {
+  .shop-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: .8rem;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .shop-content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.2rem;
+  }
 }
